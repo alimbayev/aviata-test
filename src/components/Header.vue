@@ -12,11 +12,11 @@ export default {
 
 <style scoped>
 div{
-  width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
   background: white;
   border-radius: 4px;
-  height: 100px;
+  min-height: 100px;
   margin-top: 1rem;
   display: flex;
   align-items: center;

@@ -21,16 +21,6 @@ export default {
 }
 </script>
 
-<style>
-:root {
-  font-family: Open Sans, Arial ,sans-serif;
-  font-size: 100%;
-}
-
-body {
-  background-color: #D7D7D7;
-  min-height: 200vh;
-}
-
-
+<style lang="scss">
+  @import './scss/main.scss'
 </style>

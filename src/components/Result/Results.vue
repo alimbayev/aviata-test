@@ -22,12 +22,9 @@ export default {
   },
   data() {
     return {
-      total: null
+      total: this.$store.getters.getTotalFlights
     }
   },
-  created() {
-    this.total = this.flights.length;
-  }
 }
 </script>
 
