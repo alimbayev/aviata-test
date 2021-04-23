@@ -60,9 +60,9 @@ export default {
             this.route = this.result.itineraries[0][0];
             const segments = this.route.segments
             this.isDirect = this.route.segments.length > 1 ? false : true
-            this.isSame = this.route.segments[0].carrier == this.route.segments[this.route.segments.length - 1].carrier
+            // this.isSame = this.route.segments[0].carrier == this.route.segments[this.route.segments.length - 1].carrier
             this.src = `${this.logoUrl}/${this.route.segments[0].carrier}.png`
-            this.src2 = `${this.logoUrl}/${this.route.segments[1].carrier}.png`
+            // this.src2 = `${this.logoUrl}/${this.route.segments[1].carrier}.png`
             this.carrierName = this.route.carrier_name
             this.firstOriginCode = this.route.segments[0].origin_code
             segments.length > 1 ? this.secondOriginCode = segments[segments.length -1].origin_code : this.secondOriginCode = null

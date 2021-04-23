@@ -36,10 +36,9 @@ export default {
     },
     methods: {
         changeFilter(isTrue = true) {
-            const updatedFilters = { ...this.filters }
-            
             isTrue ? this.carriers.forEach(carrier => this.filters[this.getCarrier(carrier)] = true)
                    : this.carriers.forEach(carrier => this.filters[this.getCarrier(carrier)] = false);
+            const updatedFilters = { ...this.filters }
             this.$store.dispatch('changeAirlineFilters', updatedFilters)
         },
 
@@ -55,13 +54,13 @@ export default {
             if (isChecked) 
                   checkboxes.map(elem => {
                     elem = elem.firstChild;
-                    elem.checked = false;
+                    elem.checked = true;
                     elem.nextSibling.classList.add('active')
                     this.isChecked = false; })
 
             else checkboxes.map(elem => {
                     elem = elem.firstChild;
-                    elem.checked = true;
+                    elem.checked = false;
                     elem.nextSibling.classList.remove('active')
                     this.isChecked = true;  })
             
